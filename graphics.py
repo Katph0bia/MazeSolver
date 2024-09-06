@@ -9,11 +9,11 @@ class Window:
         self.__running = False
         self.__root.protocol("WM_DELETE_WINOW", self.close)
     
-    def redraw():
+    def redraw(self):
         self.__root.update_idletasks()
         self.__root.update()
 
-    def wait_for_close():
+    def wait_for_close(self):
         self.__running = True
         while self.__running:
             self.redraw()
@@ -23,7 +23,7 @@ class Window:
         line.draw(self.__canvas, fill_color)
 
 
-    def close():
+    def close(self):
         self.__running = False
 
 class Point:
