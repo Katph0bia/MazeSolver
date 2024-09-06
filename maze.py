@@ -32,7 +32,7 @@ class Maze:
             self._cells.append(col_cells)
         for i in range(self._num_cols):
             for j in range(self._num_rows):
-                self._draw_cell(i, j)
+                self._draw_cells(i, j)
     
     def _draw_cells(self, i, j):
         if self._win is None:
